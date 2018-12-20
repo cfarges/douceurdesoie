@@ -1,0 +1,122 @@
+/* mixin */
+
+.vWidth(@w) {
+    width: (@w/1920) * 100vw; 
+}
+.vHeight(@h) {
+    height: (@h/1080) * 100vh; 
+}
+.vSize(@w) {
+    font-size: (@w/1920) * 100vw; 
+}
+
+.rMargin(@t,@r,@b,@l) {
+    margin: (@t/1080)*100vh (@r/1920)*100vw (@b/1080)*100vh (@l/1920)*100vw;
+}
+.hMbottom(@h) {
+    margin-bottom: (@h/1080)*100vh;
+}
+.hMtop(@h) {
+    margin-top: (@h/1080)*100vh;
+}
+.wMLeft(@w) {
+    margin-left: (@w/1920)*100vw;
+}
+.wMRight(@w) {
+    margin-right: (@w/1920)*100vw;
+}
+
+.rPadding(@t,@r,@b,@l) {
+    padding: (@t/1080)*100vh (@r/1920)*100vw (@b/1080)*100vh (@l/1920)*100vw;
+}
+
+.rightM(@color){
+    content: " ";
+    width: 0; 
+    height: 0; 
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent; 
+    border-left: 6px solid @color; 
+    display: inline-block;
+    vertical-align: middle;
+}
+.leftM(@color){
+    content: " ";
+    width: 0; 
+    height: 0; 
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent; 
+    border-right: 6px solid @color; 
+    display: inline-block;
+    vertical-align: middle;
+}
+.right(@color){
+    content: " ";
+    width: 0; 
+    height: 0; 
+    border-top: (8/1920)*100vw solid transparent;
+    border-bottom: (8/1920)*100vw  solid transparent; 
+    border-left: (12/1920)*100vw  solid @color; 
+    display: inline-block;
+    vertical-align: middle;
+}
+.left(@color){
+    content: " ";
+    width: 0; 
+    height: 0; 
+    border-top: (8/1920)*100vw solid transparent;
+    border-bottom: (8/1920)*100vw solid transparent; 
+    border-right: (12/1920)*100vw solid @color; 
+    display: inline-block;
+    vertical-align: middle;
+}
+/* Fonction toute prête pour gérer Rem et Pixel en fonction des supports des navigateurs. */
+.font-size(@sizeValue) {
+    @remValue: @sizeValue;
+    @pxValue: (@sizeValue * 10);
+    font-size: ~"@{pxValue}px"; 
+    font-size: ~"@{remValue}rem";
+}
+.cover(@x, @y) {
+    background-position: @x @y;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.transition(@duration : 250ms, @property : all, @ease : ease-in-out) {
+    -webkit-transition: @duration @property @ease;
+    -moz-transition: @duration @property @ease;
+    -o-transition: @duration @property @ease;
+    transition: @duration @property @ease;
+}
+.centerY() {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.centerX() {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.center() {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.rounded(@size) {
+    -webkit-border-radius: @size;
+            border-radius: @size;
+}

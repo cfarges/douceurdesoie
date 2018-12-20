@@ -1,0 +1,89 @@
+.main-header{
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    top:0;
+    left: 0;
+    background-color: @white;
+    -webkit-box-shadow: 0 0px 2px 1px rgba(0,0,0,0.2);
+    box-shadow: 0 0px 2px 1px rgba(0,0,0,0.2);
+    
+    .wrap{
+        display: flex;
+        -webkit-justify-content:  space-between;
+                justify-content:  space-between;
+        -webkit-align-items: center;
+                align-items: center;
+        padding: .5rem 0;
+        //.transition();
+    }
+
+    nav{
+        ul{
+            padding-left: 0;
+            list-style: none;
+            
+            li{
+                display: inline-block;
+                vertical-align: top;
+                padding: 1rem 2rem;
+                
+                a{
+                    position: relative;
+                    display: block;
+                    text-decoration: none;
+                    font-size: @font-m;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    color: @color-txt;
+                    letter-spacing: 1px;
+                    
+                    &:after {
+                        position: absolute;
+                        content: '';
+                        bottom: -8px;
+                        left: 0;
+                        width: 0;
+                        height: 2px;
+                        background-color: @pink;
+                        .transition();
+                    }
+
+                    &:hover{
+                        color: @pink;
+                        
+                        &:after {
+                            width: 3.2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.nav-is-stuck .main-header {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+    animation: stickAnim .5s;
+}
+
+@keyframes stickAnim {
+    0% {
+        transform: translateY(-86px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* ==========================================================================
+   Responsive
+   ========================================================================== */
+
+@media only screen and (min-width: 480px) {
+	
+}
