@@ -1,8 +1,11 @@
 <section class="hightlight">
     <div class="wrap">
         <div class="banner">
+            <a href="#" class="logo">
+               <img src="<?php echo get_template_directory_uri(); ?>/bs/assets/img/douceurdesoie.svg" alt="Douceur de soie" />
+            </a>
             <h1>Carine Dubois <span class="color dancing">Esthéticienne</span></h1>
-            <h2 class="clearfix"><span class="phone">06.00.00.00.00</span> - <a href="#" class="place"><i class="fas fa-map-marker"></i> Fouju</a> - <a href="#" class="share-ico"><i class="fab fa-facebook-square"></i></a></h2>
+            <h2 class="clearfix"><span class="phone">07.67.83.69.77</span> - <a href="#me-trouver" class="place"><i class="fas fa-map-marker"></i> Fouju</a></h2>
         </div>
     </div>
 </section>
@@ -68,7 +71,7 @@
                 <p>Je m'appelle <strong>Carine</strong>, et suis <strong>esthéticienne</strong> depuis  semper in fuga uxoresque mercenariae conductae ad tempus ex pacto atque, ut sit species matrimonii, dotis nomine.<br/>
                 <strong>C'est avec plaisir</strong> que je vous accueillerai de mon salon pour vous coniunx hastam et tabernaculum offert marito, post statum diem si id elegerit discessura, et incredibile est quo ardore apud eos in venerem uterque solvitur sexus.
                 </p>
-              </div>
+            </div>
         </div>
     </div>
 </section>

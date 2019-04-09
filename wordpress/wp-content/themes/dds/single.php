@@ -3,7 +3,7 @@
  * The template for displaying all single post.
  *
  *
- * @package Theme name to replace
+ * @package Douceur de Soie
  */
 ?>
 

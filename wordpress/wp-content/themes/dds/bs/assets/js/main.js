@@ -50,18 +50,37 @@
 
             var self = this;
 
-            if($('.home').length){
+            /*if($('.home').length){
                 $('.main-header nav').on('click', 'a', function(event) {
                     event.preventDefault();
-                    /* Act on the event */
-                    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top - 40}, 500);
+                    //$('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top - 40}, 500);
+                    self.scrollTo( $(this).attr('href') );
                 });
-            }
+            }*/
+
+            $("a[href*='#']:not([href='#'])").click(function() {
+                if (
+                    location.hostname == this.hostname
+                    && this.pathname.replace(/^\//,"") == location.pathname.replace(/^\//,"")
+                ) {
+                    var anchor = $(this.hash);
+                    anchor = anchor.length ? anchor : $("[name=" + this.hash.slice(1) +"]");
+                    if ( anchor.length ) {
+                        $("html, body").animate( { scrollTop: anchor.offset().top - 40}, 500);
+                    }
+                }
+            });
 
             //On window resize
             $(window).on('resize', function(e) {
                 self.sizes();
             });
+        },
+
+        scrollTo: function( target ) {
+            if( $(target).length ) {
+                $("html, body").stop().animate( { scrollTop: $(target).offset().top - 40}, 500);
+            }
         }
 
 
@@ -155,7 +174,7 @@ dds.init();
     });
 }(window, document));
 
-     
+ 
 
 /*
     Goolge map

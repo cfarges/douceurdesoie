@@ -3,7 +3,7 @@
         <div class="wrap">
                 
             <a href="#" class="logo">
-               <img src="http://via.placeholder.com/150x70" alt="Douceur de soie" />
+               <img src="<?php echo get_template_directory_uri(); ?>/bs/assets/img/douceurdesoie-pink.svg" alt="Douceur de soie" />
             </a>
 
             <nav>

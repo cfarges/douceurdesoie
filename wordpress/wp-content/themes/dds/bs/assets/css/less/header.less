@@ -4,7 +4,7 @@
     width: 100%;
     top:0;
     left: 0;
-    background-color: @white;
+    background-color: #ffffff;
     -webkit-box-shadow: 0 0px 2px 1px rgba(0,0,0,0.2);
     box-shadow: 0 0px 2px 1px rgba(0,0,0,0.2);
     
@@ -60,6 +60,11 @@
             }
         }
     }
+
+    .logo {
+        opacity: 0;
+        width: 180px;
+    }
 }
 
 .nav-is-stuck .main-header {
@@ -69,6 +74,25 @@
     left: 0;
     right: 0;
     animation: stickAnim .5s;
+    
+    
+    .logo {
+        opacity: 1;
+    }
+
+    nav{
+        ul{
+            li{
+                padding: 1rem 2rem;
+                /*a{
+                    color: @color-txt;
+                    &:after {
+                        background-color: lighten(@color-txt,20);
+                    }
+                }*/
+            }
+        }
+    }
 }
 
 @keyframes stickAnim {

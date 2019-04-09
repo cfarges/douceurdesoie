@@ -3,7 +3,7 @@
  * The template for displaying Home.
  *
  *
- * @package Theme name to replace
+ * @package Douceur de Soie
  */
 ?>
 

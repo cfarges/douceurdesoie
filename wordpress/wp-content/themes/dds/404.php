@@ -3,7 +3,7 @@
  * The template for displaying 404 page not found.
  *
  *
- * @package Theme name to replace
+ * @package Douceur de Soie
  */
 ?>
 
