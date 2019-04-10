@@ -8,6 +8,7 @@
 
             <nav>
                 <ul>
+                    <li class="phone"><i class="fas fa-mobile-alt"></i> 07.67.83.69.77</li>
                     <li><a href="#mes-prestations">Prestations</a></li>
                     <li><a href="#a-propos-de-moi">A propos</a></li>
                     <li><a href="#les-tarifs">Tarifs</a></li>
@@ -18,3 +19,4 @@
 
         </div>
     </header>
+    

@@ -38,6 +38,13 @@ h2{
     }
 }
 
+.uppercase{
+    text-transform: uppercase;
+}
+.txtcenter{
+    text-align: center;
+}
+
 // wrap
 .wrap {
     margin-left: auto;
@@ -82,7 +89,7 @@ h2{
 
 /* HOME section */
 section.hightlight{
-    height: 55rem;
+    height: 50rem;
     width: 100%;
     background: @dark-blue url('../img/bg-home.jpg') no-repeat center left 20rem;
     -webkit-background-size: contain;
@@ -104,8 +111,8 @@ section.hightlight{
         width: 48%;
         
         .logo{
-            width: 90%;
-            margin-bottom: 8vh;
+            width: 96%;
+            margin-bottom: 5vh;
         }
 
         h1{
@@ -134,8 +141,12 @@ section.hightlight{
 
         .phone{
             display: inline-block;
-            margin-right: 1.5rem;
+            margin-right: 1rem;
             padding-left: 0;
+            .font-size(3.5);
+            i{
+                .font-size(3);
+            }
         }
 
         a{
@@ -156,6 +167,13 @@ section.hightlight{
     }
 }
 
+section.banner-offer{
+    background: @pink;
+    color: @white;
+    padding: 25px 0;
+    .font-size(2.5);
+}
+
 section.prestations{
     ul.list{
         padding-left: 0;
@@ -165,12 +183,11 @@ section.prestations{
         li{
             position: relative;
             display: inline-block;
-            width: 23%;
-            margin-right: 2%;
+            width: 50%;
+            padding-left: 4%;
+            padding-right: 4%;
+            padding-bottom: 4%;
 
-            &:last-child{
-                margin-right: 0;
-            }
 
             a{
                 position:  relative;   
@@ -183,8 +200,9 @@ section.prestations{
                     position: absolute;
                     z-index: 2;
                     content: '';
-                    width: 90%;
-                    height: 60%;
+                    width: 0;
+                    height: 0;
+                    opacity: 0;
                     -webkit-transition: 350ms all;
                     -moz-transition: 350ms all;
                     -o-transition: 350ms all;
@@ -216,10 +234,10 @@ section.prestations{
 
             .thumb{
                 height: 0;
-                padding-bottom: 100%;
+                padding-bottom: 65%;
                 background-position: 50% 50%;
                 background-repeat: no-repeat;
-                background-size: 180% auto;
+                background-size: 110% auto;
                 .transition();
             }
 
@@ -231,7 +249,8 @@ section.prestations{
                 bottom: 45%;
                 text-align: center;
                 color: @white;
-                .font-size(1.5);
+                text-shadow: 2px 2px rgba(0,0,0,0.3);
+                .font-size(2.5);
                 font-weight: bold;
                 text-transform: uppercase;
             }
@@ -239,11 +258,12 @@ section.prestations{
             a:hover{           
                 &:after, 
                 &:before {
+                    opacity: 1;
                     width: calc(100% ~"-" 14px);
                     height: calc(100% ~"-" 14px);
                 }
                 .thumb{
-                    background-size: 200% auto;
+                    background-size: 120% auto;
                 }
             }
         }
@@ -365,7 +385,9 @@ section.contact{
             text-align: center;
         }
         .phone{
-            .font-size(2.5);
+            display: block;
+            .font-size(3);
+            margin: 10px 0;
             color: @pink;
             font-weight: 600;
         }
@@ -469,23 +491,19 @@ section.contact{
 
             .btn-send{
                 position: relative;
-                z-index: 1;
                 float: right;
+                z-index: 1;
                 margin-right: 1.5%;
                 margin-top: 15px;
-                color: @dark-grey;
+                background: @dark-grey;
+                padding: 10px 40px;
                 line-height: 2em;
                 cursor: pointer;
-
+                .transition();
+                
                 &:hover{
-                    color: @dark-grey;
-                    
-                    &:after{
-                        .transition(all, 350ms, ease-in-out);
-                        height: 3px;
-                    }
+                    background: @pink;
                 }
-
                 input{
                     position: relative;
                     display: block;
@@ -494,6 +512,12 @@ section.contact{
                     border: none;
                     background: transparent;
                     padding: 0; 
+                    text-transform: uppercase;
+                    font-family: 'Lato', Arial, sans-serif;
+                    .font-size(1.6);
+                    letter-spacing: 1px;
+                    color: @white;
+                    font-weight: 400;
                 }
 
             }
@@ -517,17 +541,17 @@ section.prices{
         display: inline-block;
         vertical-align: top;
         width: 50%;
-        padding: 20px 2%;
+        padding: 20px 4% 20px 2%;
         
         table{
             width: 100%;
             max-width: 100%;
             margin-bottom: 0;
             td{
-                padding: 8px;
+                padding: 5px;
                 line-height: 1.42857143;
                 vertical-align: top;
-                .font-size(1.5);
+                .font-size(2);
                 font-weight: 300;
                 text-align: right;
             }
@@ -543,6 +567,14 @@ section.prices{
             strong{
                 font-weight: 600;
             }
+            .note{
+                display: block;
+                .font-size(1.4);
+            }
+        }
+
+        table + h3 {
+            padding-top: 40px;
         }
     }
 }

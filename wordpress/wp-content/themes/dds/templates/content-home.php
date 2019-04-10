@@ -1,12 +1,19 @@
 <section class="hightlight">
     <div class="wrap">
         <div class="banner">
-            <a href="#" class="logo">
-               <img src="<?php echo get_template_directory_uri(); ?>/bs/assets/img/douceurdesoie.svg" alt="Douceur de soie" />
-            </a>
-            <h1>Carine Dubois <span class="color dancing">Esthéticienne</span></h1>
-            <h2 class="clearfix"><span class="phone">07.67.83.69.77</span> - <a href="#me-trouver" class="place"><i class="fas fa-map-marker"></i> Fouju</a></h2>
+            <h1>
+               <img class="logo" src="<?php echo get_template_directory_uri(); ?>/bs/assets/img/douceurdesoie.svg" alt="Douceur de soie" />
+               Carine Dubois <span class="color dancing">Esthéticienne</span>
+            </h1>
+            
+            <h2 class="clearfix"><span class="phone"><i class="fas fa-mobile-alt"></i> 07.67.83.69.77</span> - <a href="#me-trouver" class="place"><i class="fas fa-map-marker"></i> Fouju</a></h2>
         </div>
+    </div>
+</section>
+
+<section class="banner-offer">
+    <div class="wrap">
+        <p class="txtcenter"><strong><span class="uppercase">Offre découverte</span> : -20%</strong> sur votre première prestation</p>
     </div>
 </section>
 
@@ -81,121 +88,198 @@
         <h2><span>Les</span> Tarifs</h2>
         <div class="content">
             <div class="block-price">
-                <h3>Beauté des mains</h3>
+                <h3>Épilations</h3>
                 <table>
                   <tbody>
                     <tr>
-                        <td>Manucure express : Limage + cuticules + base traitante</td>
-                        <td>20 min </td>
-                        <td><strong>15 € </strong></td>
+                        <td>Demi-Jambes</td>
+                        <td><strong>14 € </strong></td>
                     </tr>
                     <tr>
-                        <td>Manucure brésilienne et pose de vernis classique</td>
-                        <td>35 min </td>
-                        <td><strong>34 € </strong>
+                        <td>Jambes entières</td>
+                        <td><strong>22 € </strong>
                         </td>
                     </tr>
                     <tr>
-                        <td>Beauté des mains avec gant soin + vernis classique french</td>
-                        <td>40 min </td>
-                        <td><strong>39 € </strong></td>
+                        <td>Cuisse</td>
+                        <td><strong>14 € </strong></td>
                     </tr>
                     <tr>
-                        <td>Beauté des mains avec gant soin + vernis classique french</td>
-                        <td>40 min </td>
-                        <td><strong>39 € </strong></td>
+                        <td>Maillot</td>
+                        <td><strong>9 € </strong></td>
                     </tr>
                     <tr>
-                        <td>Beauté des mains avec gant soin + vernis classique french</td>
-                        <td>40 min </td>
-                        <td><strong>39 € </strong></td>
-                    </tr>               
+                        <td>Maillot échancré</td>
+                        <td><strong>11 € </strong></td>
+                    </tr> 
+                    <tr>
+                        <td>Maillot brésilien</td>
+                        <td><strong>16 € </strong></td>
+                    </tr> 
+                    <tr>
+                        <td>Maillot intégral</td>
+                        <td><strong>19 € </strong></td>
+                    </tr>
+                    <tr>
+                        <td>Aiselles</td>
+                        <td><strong>8 € </strong></td>
+                    </tr>    
+                    <tr>
+                        <td>Ventre</td>
+                        <td><strong>5 € </strong></td>
+                    </tr>  
+                    <tr>
+                        <td>Demi-bras</td>
+                        <td><strong>9 € </strong></td>
+                    </tr>    
+                    <tr>
+                        <td>Bras entiers</td>
+                        <td><strong>13 € </strong></td>
+                    </tr> 
+                    <tr>
+                        <td>Sourcils</td>
+                        <td><strong>8 € </strong></td>
+                    </tr>
+                    <tr>
+                        <td>Lèvres</td>
+                        <td><strong>6 € </strong></td>
+                    </tr>
+                    <tr>
+                        <td>Menton</td>
+                        <td><strong>6 € </strong></td>
+                    </tr>
+                    <tr>
+                        <td>Fesses</td>
+                        <td><strong>6 € </strong></td>
+                    </tr>
                   </tbody>
                 </table>
-            </div><!--
-        --><div class="block-price">
-                <h3>Beauté des mains</h3>
+
+                <h3>Les forfaits</h3>
                 <table>
                   <tbody>
                     <tr>
-                        <td class="desc">Manucure express : Limage + cuticules + base traitante</td>
-                        <td>20 min </td>
-                        <td><strong>15 € </strong></td>
+                        <td class="desc">½ Jambes + Maillot + Aisselles</td>
+                        <td><strong>28 € </strong></td>
                     </tr>
                     <tr>
-                        <td class="desc">Manucure brésilienne et pose de vernis classique</td>
-                        <td>35 min </td>
-                        <td><strong>34 € </strong>
+                        <td class="desc">½ Jambes + Maillot ou Aisselles</td>
+                        <td><strong>21 € </strong></td>
+                    </tr>
+                    <tr>
+                        <td class="desc">Jambes + Maillot + Aisselles </td>
+                        <td><strong>36 € </strong></td>
+                    </tr>
+                    <tr>
+                        <td class="desc">Jambes + Maillot ou Aisselles </td>
+                        <td><strong>29 € </strong></td>
+                    </tr>
+                    <tr>
+                        <td class="desc">Lèvres + sourcils  </td>
+                        <td><strong>12 € </strong></td>
+                    </tr>
+                                 
+                  </tbody>
+                </table>
+
+            </div><!--
+        --><div class="block-price">
+                <h3>Soin du visage</h3>
+                <table>
+                  <tbody>
+                    <tr>
+                        <td class="desc">Mise en beauté</td>
+                        <td>40min </td>
+                        <td><strong>23 € </strong></td>
+                    </tr>
+                    <tr>
+                        <td class="desc">Soin complet</td>
+                        <td>1h30 </td>
+                        <td><strong>37 € </strong>
                         </td>
                     </tr>
                     <tr>
-                        <td class="desc">Beauté des mains avec gant soin + vernis classique french</td>
-                        <td>40 min </td>
+                        <td class="desc">Soin spécifique</td>
+                        <td>1h30 </td>
                         <td><strong>39 € </strong></td>
                     </tr>              
                   </tbody>
                 </table>
-            </div><!--
-        --><div class="block-price">
-                <h3>Épilation</h3>
+
+                <h3>Soin du corps</h3>
                 <table>
                   <tbody>
                     <tr>
-                        <td>Manucure express : Limage + cuticules + base traitante</td>
-                        <td>20 min </td>
-                        <td><strong>15 € </strong></td>
+                        <td class="desc">Soin du dos</td>
+                        <td></td>
+                        <td><strong>31 € </strong></td>
                     </tr>
                     <tr>
-                        <td>Manucure brésilienne et pose de vernis classique</td>
-                        <td>35 min </td>
-                        <td><strong>34 € </strong>
-                        </td>
+                        <td class="desc">Relaxation du dos</td>
+                        <td>20min </td>
+                        <td><strong>19 € </strong></td>
                     </tr>
                     <tr>
-                        <td>Beauté des mains avec gant soin + vernis classique french</td>
-                        <td>40 min </td>
-                        <td><strong>39 € </strong></td>
+                        <td class="desc">Relaxation des jambes</td>
+                        <td>20min </td>
+                        <td><strong>19 € </strong></td>
                     </tr>
                     <tr>
-                        <td>Beauté des mains avec gant soin + vernis classique french</td>
-                        <td>40 min </td>
-                        <td><strong>39 € </strong></td>
+                        <td class="desc">Modelage californien</td>
+                        <td>1h00 </td>
+                        <td><strong>40 € </strong></td>
                     </tr>
                     <tr>
-                        <td>Beauté des mains avec gant soin + vernis classique french</td>
-                        <td>40 min </td>
-                        <td><strong>39 € </strong></td>
+                        <td class="desc">Gommage du dos</td>
+                        <td></td>
+                        <td><strong>10 € </strong></td>
+                    </tr>
+                    <tr>
+                        <td class="desc">Gommage des jambes</td>
+                        <td></td>
+                        <td><strong>14 € </strong></td>
+                    </tr> 
+                    <tr>
+                        <td class="desc">Gommage du corps</td>
+                        <td></td>
+                        <td><strong>23 € </strong></td>
+                    </tr>              
+                  </tbody>
+                </table>
+
+                <h3>Manucurie</h3>
+                <table>
+                  <tbody>
+                    <tr>
+                        <td class="desc">Manucurie</td>
+                        <td></td>
+                        <td><strong>20 € </strong></td>
+                    </tr>
+                    <tr>
+                        <td class="desc">French manucure</td>
+                        <td></td>
+                        <td><strong>9 € </strong></td>
+                    </tr>    
+                    <tr>
+                        <td class="desc">Pose de vernis</td>
+                        <td></td>
+                        <td><strong>7 € </strong></td>
+                    </tr> 
+                    <tr>
+                        <td class="desc">Pose de vernis semi-permanent</td>
+                        <td></td>
+                        <td><strong>18 € </strong></td>
+                    </tr> 
+                    <tr>
+                        <td class="desc">Soin des mains</td>
+                        <td></td>
+                        <td><strong>10 € </strong></td>
                     </tr>   
                     <tr>
-                        <td>Beauté des mains avec gant soin + vernis classique french</td>
-                        <td>40 min </td>
-                        <td><strong>39 € </strong></td>
-                    </tr>
-                    <tr>
-                        <td>Beauté des mains avec gant soin + vernis classique french</td>
-                        <td>40 min </td>
-                        <td><strong>39 € </strong></td>
-                    </tr>
-                    <tr>
-                        <td>Beauté des mains avec gant soin + vernis classique french</td>
-                        <td>40 min </td>
-                        <td><strong>39 € </strong></td>
-                    </tr>   
-                    <tr>
-                        <td>Beauté des mains avec gant soin + vernis classique french</td>
-                        <td>40 min </td>
-                        <td><strong>39 € </strong></td>
-                    </tr>
-                    <tr>
-                        <td>Beauté des mains avec gant soin + vernis classique french</td>
-                        <td>40 min </td>
-                        <td><strong>39 € </strong></td>
-                    </tr>
-                    <tr>
-                        <td>Beauté des mains avec gant soin + vernis classique french</td>
-                        <td>40 min </td>
-                        <td><strong>39 € </strong></td>
-                    </tr>               
+                        <td class="desc">Forfait mains <span class="note">(manicurie, soin des mains, vernis ou french)</span></td>
+                        <td></td>
+                        <td><strong>30 € </strong></td>
+                    </tr>    
                   </tbody>
                 </table>
             </div>
@@ -220,7 +304,7 @@
     <div class="wrap">
         <h2><span>Me</span> contacter</h2>
         <div class="content">
-            <p>Pour prendre un <strong>rendez-vous</strong>, <strong>demander un conseil</strong> ou <strong>un renseignement</strong>,<br/> n'hésitez pas à me contacter soit par téléphone au <span class="phone">06.00.00.00</span>,<br/> soit via le formulaire ci-dessous, je vous réponderai très rapidement ;)</p>
+            <p>Pour prendre un <strong>rendez-vous</strong>, <strong>demander un conseil</strong> ou <strong>un renseignement</strong>,<br/> n'hésitez pas à me contacter soit par téléphone au <span class="phone"><i class="fas fa-mobile-alt"></i> 07.67.83.69.77</span>soit via le formulaire ci-dessous, je vous réponderai très rapidement ;)</p>
 
             <?php echo do_shortcode( '[contact-form-7 id="11" title="Contact"]' ); ?>
         </div>

@@ -25,9 +25,20 @@
             
             li{
                 display: inline-block;
-                vertical-align: top;
+                vertical-align: middle;
                 padding: 1rem 2rem;
                 
+                &.phone{
+                    display: none;    
+                    color: @pink;
+                    .font-size(2.5);
+                    font-weight: 600;
+                    i{
+                        .font-size(2.5);
+                        margin-right: 5px;
+                    }
+                }
+
                 a{
                     position: relative;
                     display: block;
@@ -84,6 +95,10 @@
         ul{
             li{
                 padding: 1rem 2rem;
+                
+                &.phone{ 
+                    display: inline-block;
+                }
                 /*a{
                     color: @color-txt;
                     &:after {

@@ -359,6 +359,12 @@ h2 span {
   font-size: 5.5rem;
   letter-spacing: 0;
 }
+.uppercase {
+  text-transform: uppercase;
+}
+.txtcenter {
+  text-align: center;
+}
 .wrap {
   margin-left: auto;
   margin-right: auto;
@@ -391,7 +397,7 @@ h2 span {
 }
 /* HOME section */
 section.hightlight {
-  height: 55rem;
+  height: 50rem;
   width: 100%;
   background: #1e2a5a url('../img/bg-home.jpg') no-repeat center left 20rem;
   -webkit-background-size: contain;
@@ -412,8 +418,8 @@ section.hightlight .banner {
   width: 48%;
 }
 section.hightlight .banner .logo {
-  width: 90%;
-  margin-bottom: 8vh;
+  width: 96%;
+  margin-bottom: 5vh;
 }
 section.hightlight .banner h1 {
   font-size: 4.5rem;
@@ -438,8 +444,14 @@ section.hightlight .banner .color {
 }
 section.hightlight .banner .phone {
   display: inline-block;
-  margin-right: 1.5rem;
+  margin-right: 1rem;
   padding-left: 0;
+  font-size: 35px;
+  font-size: 3.5rem;
+}
+section.hightlight .banner .phone i {
+  font-size: 30px;
+  font-size: 3rem;
 }
 section.hightlight .banner a {
   display: inline-block;
@@ -457,6 +469,13 @@ section.hightlight .banner a:hover {
 section.hightlight .banner a.share-ico {
   font-size: 2rem;
 }
+section.banner-offer {
+  background: #e24f9b;
+  color: #ffffff;
+  padding: 25px 0;
+  font-size: 25px;
+  font-size: 2.5rem;
+}
 section.prestations ul.list {
   padding-left: 0;
   list-style: none;
@@ -465,11 +484,10 @@ section.prestations ul.list {
 section.prestations ul.list li {
   position: relative;
   display: inline-block;
-  width: 23%;
-  margin-right: 2%;
-}
-section.prestations ul.list li:last-child {
-  margin-right: 0;
+  width: 50%;
+  padding-left: 4%;
+  padding-right: 4%;
+  padding-bottom: 4%;
 }
 section.prestations ul.list li a {
   position: relative;
@@ -482,8 +500,9 @@ section.prestations ul.list li a:before {
   position: absolute;
   z-index: 2;
   content: '';
-  width: 90%;
-  height: 60%;
+  width: 0;
+  height: 0;
+  opacity: 0;
   -webkit-transition: 350ms all;
   -moz-transition: 350ms all;
   -o-transition: 350ms all;
@@ -512,10 +531,10 @@ section.prestations ul.list li a .overlay {
 }
 section.prestations ul.list li .thumb {
   height: 0;
-  padding-bottom: 100%;
+  padding-bottom: 65%;
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  background-size: 180% auto;
+  background-size: 110% auto;
   -webkit-transition: 250ms all ease-in-out;
   -moz-transition: 250ms all ease-in-out;
   -o-transition: 250ms all ease-in-out;
@@ -529,18 +548,20 @@ section.prestations ul.list li h3 {
   bottom: 45%;
   text-align: center;
   color: #ffffff;
-  font-size: 15px;
-  font-size: 1.5rem;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+  font-size: 25px;
+  font-size: 2.5rem;
   font-weight: bold;
   text-transform: uppercase;
 }
 section.prestations ul.list li a:hover:after,
 section.prestations ul.list li a:hover:before {
+  opacity: 1;
   width: calc(100% - 14px);
   height: calc(100% - 14px);
 }
 section.prestations ul.list li a:hover .thumb {
-  background-size: 200% auto;
+  background-size: 120% auto;
 }
 section.about .content {
   padding: 0 2%;
@@ -642,8 +663,10 @@ section.contact .content p {
   text-align: center;
 }
 section.contact .content .phone {
-  font-size: 25px;
-  font-size: 2.5rem;
+  display: block;
+  font-size: 30px;
+  font-size: 3rem;
+  margin: 10px 0;
   color: #e24f9b;
   font-weight: 600;
 }
@@ -732,23 +755,21 @@ section.contact .content form .ajax-loader {
 }
 section.contact .content form .btn-send {
   position: relative;
-  z-index: 1;
   float: right;
+  z-index: 1;
   margin-right: 1.5%;
   margin-top: 15px;
-  color: #1e201d;
+  background: #1e201d;
+  padding: 10px 40px;
   line-height: 2em;
   cursor: pointer;
+  -webkit-transition: 250ms all ease-in-out;
+  -moz-transition: 250ms all ease-in-out;
+  -o-transition: 250ms all ease-in-out;
+  transition: 250ms all ease-in-out;
 }
 section.contact .content form .btn-send:hover {
-  color: #1e201d;
-}
-section.contact .content form .btn-send:hover:after {
-  -webkit-transition: all 350ms ease-in-out;
-  -moz-transition: all 350ms ease-in-out;
-  -o-transition: all 350ms ease-in-out;
-  transition: all 350ms ease-in-out;
-  height: 3px;
+  background: #e24f9b;
 }
 section.contact .content form .btn-send input {
   position: relative;
@@ -758,6 +779,13 @@ section.contact .content form .btn-send input {
   border: none;
   background: transparent;
   padding: 0;
+  text-transform: uppercase;
+  font-family: 'Lato', Arial, sans-serif;
+  font-size: 16px;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  color: #ffffff;
+  font-weight: 400;
 }
 section.prices {
   font-family: 'Lato', sans-serif;
@@ -775,7 +803,7 @@ section.prices .block-price {
   display: inline-block;
   vertical-align: top;
   width: 50%;
-  padding: 20px 2%;
+  padding: 20px 4% 20px 2%;
 }
 section.prices .block-price table {
   width: 100%;
@@ -783,11 +811,11 @@ section.prices .block-price table {
   margin-bottom: 0;
 }
 section.prices .block-price table td {
-  padding: 8px;
+  padding: 5px;
   line-height: 1.42857143;
   vertical-align: top;
-  font-size: 15px;
-  font-size: 1.5rem;
+  font-size: 20px;
+  font-size: 2rem;
   font-weight: 300;
   text-align: right;
 }
@@ -802,6 +830,14 @@ section.prices .block-price table tr {
 }
 section.prices .block-price table strong {
   font-weight: 600;
+}
+section.prices .block-price table .note {
+  display: block;
+  font-size: 14px;
+  font-size: 1.4rem;
+}
+section.prices .block-price table + h3 {
+  padding-top: 40px;
 }
 /* ==========================================================================
      Responsive
@@ -830,8 +866,20 @@ section.prices .block-price table strong {
 }
 .main-header nav ul li {
   display: inline-block;
-  vertical-align: top;
+  vertical-align: middle;
   padding: 1rem 2rem;
+}
+.main-header nav ul li.phone {
+  display: none;
+  color: #e24f9b;
+  font-size: 25px;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+.main-header nav ul li.phone i {
+  font-size: 25px;
+  font-size: 2.5rem;
+  margin-right: 5px;
 }
 .main-header nav ul li a {
   position: relative;
@@ -885,6 +933,9 @@ section.prices .block-price table strong {
                         background-color: lighten(@color-txt,20);
                     }
                 }*/
+}
+.nav-is-stuck .main-header nav ul li.phone {
+  display: inline-block;
 }
 @keyframes stickAnim {
   0% {
